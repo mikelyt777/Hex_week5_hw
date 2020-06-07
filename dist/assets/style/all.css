@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+/*css3*/
+/*
+http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  font-size: 0;
+  letter-spacing: 0;
+  line-height: 0; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+img {
+  display: block; }
+
+body {
+  font-size: 18px;
+  font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  letter-spacing: 0.05em; }
+  @media only screen and (max-width: 999px) {
+    body {
+      font-size: 16px; } }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+p {
+  font-size: 14px;
+  line-height: 20px; }
+
+.clearfix {
+  overflow: auto;
+  zoom: 1; }
+
+.clearfix:after {
+  /* FF, IE8, O, S, etc. */
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+button {
+  padding: 0;
+  border: 0;
+  display: block;
+  outline: none;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer; }
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.fleft {
+  float: left; }
+  @media only screen and (max-width: 768px) {
+    .fleft {
+      float: none; } }
+
+.fright {
+  float: right; }
+  @media only screen and (max-width: 768px) {
+    .fright {
+      float: none; } }
+
+.m_fleft {
+  float: left; }
+
+.m_fright {
+  float: right; }
+
+.align_center {
+  text-align: center; }
+
+.align_left {
+  text-align: left; }
+
+.align_right {
+  text-align: right; }
+
+.op {
+  font-size: 150px; }
+
+/*# sourceMappingURL=all.css.map */
