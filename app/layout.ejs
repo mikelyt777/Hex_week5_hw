@@ -6,21 +6,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
-  <!-- css -->
-  <link rel="stylesheet" href="./assets/style/all.css">
+
+  <!-- bootstrap css-->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+  
   <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+ 
 </head>
 
 <body>
-  <header class="sidebar">
-    <img src="assets/images/logo-ANSWER.svg" alt="">
-    
-  </header>
-
-  <%- contents %>
+  <div class="d-flex">
+    <header class="sidebar d-flex flex-column justify-content-between">
+      <div>
+        <h1 class="logo">
+          <img src="assets/images/logo-ANSWER.svg" alt="">
+        </h1>
+        <ul class="sidebar_ul pl-0">
+          <li>
+            <a href="#">
+              <img src="assets/images/01.svg" alt="">
+              <p class="sidebar_title mb-0">Dashboard</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/images/02.svg" alt="">
+              <p class="sidebar_title mb-0">Question</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/images/03.svg" alt="">
+              <p class="sidebar_title mb-0">Assignment</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/images/04.svg" alt="">
+              <p class="sidebar_title mb-0">Course</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/images/05.svg" alt="">
+              <p class="sidebar_title mb-0">Admin</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/images/06.svg" alt="">
+              <p class="sidebar_title mb-0">Settings</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+     
+      <div class="member d-flex align-items-center">
+        <img src="assets/images/andychen.jpeg" alt="">
+        <div>
+          <p class="mb-0">Andy Chen</p>
+          <p class="email mb-0">andy0401@mail.com</p>
+        </div>
+      </div>
+    </header>
+    <div> 
+    <%- contents %>
+    </div>
+  </div>
+  
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
