@@ -1,8 +1,8 @@
 //import scss
-@import "bootstrap/bootstrap-reboot";
-@import "bootstrap/bootstrap";
-@import "bootstrap/bootstrap-grid";
-@import "bootstrap/bootstrap-utilities";
+@import "variable";
+@import "reset";
+@import "base";
+@import "utilities";
 
 //layout
 @import "layout/sidebar";

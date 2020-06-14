@@ -1,0 +1,184 @@
+//Screen Extra large (≥1200px)
+// $xl: "screen and (min-width: 1200px)";
+//Screen Large (≥992px)
+// $lg: "screen and (min-width: 992px)";
+//Screen Medium (≥768px)
+// $md: "screen and (min-width: 768px)";
+//Screen Small (≥576px)
+// $sm: "screen and (min-width: 576px)";
+//Screen Extra small (<576px)
+// $xs: "screen and (max-width: 576px)";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+//font-size
+$body-fz: 18px;
+$body-fz-m: 16px;
+
+//line-height
+$body-lh: 1.8;
+$body-lh-m: 1.5;
+
+//letter-spacing
+$body-ls: 0.05em;
+
+//font-family
+$body-font-family:'Roboto','Noto Sans TC','Microsoft JhengHei',sans-serif;
+
+//color
+$color-green: #2A8356;
+$color-green-l: #CDDDCD;
+$color-green-ll: #EDF4EE;
+$color-gray: #707070;
+
+//screen
+$pc_xl: "only screen and (max-width: 1600px)";
+$pc_l: "only screen and (max-width: 1200px)";
+$pc: "only screen and (min-width: 1000px)";
+$npc: "only screen and (max-width: 999px)";
+$mb: "only screen and (max-width: 768px)";
+$xs: "only screen and (max-width: 576px)";
+
+//others
+$main: 1200px;
+$grid: 100%;
+$img_path: "../images/";
+@function img-path($img_path){
+	@return $img_path;
+}
+
+
+/*css3*/
+@mixin keyframes($name){
+	@-webkit-keyframes #{$name} {
+		@content; 
+	}
+  	@-moz-keyframes #{$name} {
+    	@content;
+  	}
+  	@-ms-keyframes #{$name} {
+    	@content;
+  	}
+  	@keyframes #{$name} {
+    	@content;
+  	}
+}
+@mixin transform($transforms){
+	-moz-transform:$transforms;
+	-ms-transform:$transforms;
+	-o-transform:$transforms;
+	-webkit-transform:$transforms;
+	transform:$transforms;
+}
+@mixin scale($scale){
+	@include transform(scale($scale));
+}
+@mixin rotate($rotate){
+	@include transform(rotate($rotate));
+}
+@mixin skew($skew){
+	@include transform(skew($skew));
+}
+@mixin translate($translateX,$translateY){
+	@include transform(translate($translateX,$translateY));
+}
+@mixin transform-origin($origin){
+	-moz-transform-origin:$origin;
+	-ms-transform-origin:$origin;
+	-o-transform-origin:$origin;
+	-webkit-transform-origin:$origin;
+	transform-origin:$origin;
+}
+@mixin transition($transition){
+	transition:$transition;
+	-moz-transition:$transition;
+	-o-transition:$transition;
+	-ms-transition:$transition;
+	-webkit-transition:$transition;
+}
+@mixin bg_change($sec){
+	@include transition(all $sec);
+}
+@mixin bg($img,$center:center,$top:top,$no:no-repeat){
+	background: url("#{$img_path}#{$img}");
+	background-position:$center $top;
+  	background-repeat:$no;
+  	width: image-width("#{$img_path}#{$img}");    
+  	height: image-height("#{$img_path}#{$img}"); 	
+}
+@mixin bg_m($img){
+	background: url("#{$img_path}#{$img}") top center no-repeat;
+  	width: image-width("#{$img_path}#{$img}")/2;    
+  	height: image-height("#{$img_path}#{$img}")/2;
+  	-webkit-background-size:  image-width("#{$img_path}#{$img}")/2 auto;
+  	-o-background-size:  image-width("#{$img_path}#{$img}")/2 auto;
+  	background-size:  image-width("#{$img_path}#{$img}")/2 auto;
+}
+@mixin bg_p($img){
+	background: url("#{$img_path}#{$img}") top center no-repeat;
+  	width: image-width("#{$img_path}#{$img}")/2.5;    
+  	height: image-height("#{$img_path}#{$img}")/2.5;
+  	-webkit-background-size:  image-width("#{$img_path}#{$img}")/2.5 auto;
+  	-o-background-size:  image-width("#{$img_path}#{$img}")/2.5 auto;
+  	background-size:  image-width("#{$img_path}#{$img}")/2.5 auto;
+}
+@mixin bg_size($img){
+	-webkit-background-size:  image-width("#{$img_path}#{$img}")/2 auto;
+  	-o-background-size:  image-width("#{$img_path}#{$img}")/2 auto;
+  	background-size:  image-width("#{$img_path}#{$img}")/2 auto;
+}
+@mixin img_position($img){
+    margin-left: image-width("#{$img_path}#{$img}")/-2;    
+    margin-top: image-height("#{$img_path}#{$img}")/-2;
+}
+@mixin alpha($alpha){
+	opacity: $alpha;
+	$alpha-ie: $alpha * 100;
+	filter: alpha(opacity=$alpha-ie); //IE8
+	-moz-opacity:$alpha;
+	-khtml-opacity: $alpha;
+}
+
+@mixin alpha($alpha:1,$ie_alpha:100){
+	opacity:$alpha;
+	-moz-opacity:$alpha;
+	filter:alpha(opacity=$ie_alpha);
+}
+
+@mixin position($position,$z-index){
+	position:$position;
+	z-index:$z-index;
+}
+@mixin xy($top:50%,$left:50%){
+	top:$top;
+	left:$left;
+}
+@mixin ellipsis($height,$line_clamp) {
+  height: $height;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line_clamp;
+  -webkit-box-orient: vertical;
+  display: -moz-box;
+  -moz-line-clamp: $line_clamp;
+  -moz-box-orient: vertical;
+  display: box;
+  line-clamp: $line_clamp;
+  box-orient: vertical;
+}
+ @mixin img_h($img){
+ 	padding-top: image-height("#{$img_path}#{$img}")/image-width("#{$img_path}#{$img}")*100%;  
+ }
+ @mixin scroll_x{
+	overflow-y: auto;
+    white-space: nowrap;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: 0;
+}
+ @mixin scroll_item{
+ 	display: inline-block;
+	white-space: nowrap;
+}
