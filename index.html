@@ -19,47 +19,47 @@
 </head>
 
 <body>
-  <div class="d-flex">
+  <div class="d-flex h100">
     <header class="sidebar d-flex flex-column justify-content-between">
       <div>
         <h1 class="logo">
           <img src="assets/images/logo-ANSWER.svg" alt="">
         </h1>
         <ul class="sidebar_ul pl-0">
-          <li>
-            <a href="#">
+          <li class="sidebar_li">
+            <a href="javascript:;">
               <img src="assets/images/01.svg" alt="">
-              <p class="sidebar_title mb-0">Dashboard</p>
+              <p class="sidebar_title">Dashboard</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="sidebar_li">
+            <a href="javascript:;">
               <img src="assets/images/02.svg" alt="">
-              <p class="sidebar_title mb-0">Question</p>
+              <p class="sidebar_title">Question</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="sidebar_li">
+            <a href="javascript:;">
               <img src="assets/images/03.svg" alt="">
-              <p class="sidebar_title mb-0">Assignment</p>
+              <p class="sidebar_title">Assignment</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="sidebar_li">
+            <a href="javascript:;">
               <img src="assets/images/04.svg" alt="">
-              <p class="sidebar_title mb-0">Course</p>
+              <p class="sidebar_title">Course</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="sidebar_li">
+            <a href="javascript:;">
               <img src="assets/images/05.svg" alt="">
-              <p class="sidebar_title mb-0">Admin</p>
+              <p class="sidebar_title">Admin</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="sidebar_li">
+            <a href="javascript:;">
               <img src="assets/images/06.svg" alt="">
-              <p class="sidebar_title mb-0">Settings</p>
+              <p class="sidebar_title">Settings</p>
             </a>
           </li>
         </ul>
@@ -68,33 +68,189 @@
       <div class="member d-flex align-items-center">
         <img src="assets/images/andychen.jpeg" alt="">
         <div>
-          <p class="mb-0">Andy Chen</p>
-          <p class="email mb-0">andy0401@mail.com</p>
+          <p>Andy Chen</p>
+          <p class="email">andy0401@mail.com</p>
         </div>
       </div>
     </header>
-    <div> 
-    
+    <div class="all_contents"> 
+      
 
-<nav>
-    <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
+<nav class="nav px_2rem d-flex align-items-center justify-content-between">
+  <div class="nav_titles d-flex align-items-center">
+    <h2 class="h2_title">Assignment</h2>
+    <a href="javascript:;" class="d-flex align-items-center">
+      <p>All Courses</p>
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </div>
+  <div class="nav_btns d-flex align-items-center">
+    <a href="javascript:;">
+      <i class="fas fa-search"></i>
+    </a>
+    <a href="javascript:;">
+      <i class="fas fa-bell"></i>
+    </a>
+  </div>
 </nav>
+
+<section class="assignment d-flex px_2rem pb-4">
+  <div class="assign_left mr-4">
+    <a href="javascript:;" class="nav_titles all_assign_select d-flex align-items-center">
+      <p>All (4)</p>
+      <i class="fas fa-chevron-down"></i>
+    </a>
+    <ul class="assign_list list-unstyled">
+      <li class="assign_object">
+        <a href="javascript:;" class="a_hover_black">
+          <div class="d-flex align-items-center justify-content-between">
+            <p>Chapter Assignment 2</p>
+            <p>4 hrs ago</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="comment_title_full comment_title">Please check this file for me, thanks!</p>
+            <p class="comment_name">Emily Wang</p>
+          </div>
+        </a>
+      </li>
+      <li class="assign_object">
+        <a href="javascript:;" class="a_hover_black">
+          <div class="d-flex align-items-center justify-content-between">
+            <p>Chapter Assignment 1</p>
+            <p>7 hrs ago</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="comment_title_full comment_title">My Homework</p>
+            <p class="comment_name">David Xu</p>
+          </div>
+        </a>
+      </li>
+      <li class="assign_object">
+        <a href="javascript:;" class="a_hover_black">
+          <div class="d-flex align-items-center justify-content-between">
+            <p>Final Assignment</p>
+            <p>12 hrs ago</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="comment_title_full comment_title">Have a problem with this assignment</p>
+            <p class="comment_name">Tony Wei</p>
+          </div>
+        </a>
+      </li>
+      <li class="assign_object">
+        <a href="javascript:;" class="a_hover_black">
+          <div class="d-flex align-items-center justify-content-between">
+            <p>Final Assignment</p>
+            <p>18 hrs ago</p>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="comment_title_full comment_title">Did I do it right?</p>
+            <p class="comment_name">Christina Lin</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="assign_right">
+    <p class="comments_number">2 comments</p>
+    <div class="assign_comment">
+      <div class="ac_title d-flex align-items-center justify-content-between">
+        <div class="">
+          <p>Chapter Assignment 2</p>
+          <p class="comment_title_full">Please check this file for me, thanks!</p>  
+        </div>
+        <a href="javascript:;">
+          <i class="fas fa-ellipsis-v"></i>
+        </a>
+      </div>
+      <div class="comment_section_box">
+        <div class="comment_section">
+          <div class="comment_person d-flex align-items-center mb-3">
+            <img src="assets/images/emilywang.jpeg" alt="">
+            <div class="comment_person_info">
+              <p class="">Emily Wang</p>
+              <p class="comment_time">10:38 AM (4 hours ago)</p>
+            </div>
+          </div>
+          <div class="comment_text">
+            <p class="mb-3">
+              Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span>div</span> is bigger than the height of the <span>img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. 
+              <br> What is the gap or extra space below image?
+            </p>
+            <button type="button" class="btn btn-outline-gl mb-3"><i class="fas fa-link pr-2"></i>HW-2-David.zip</button>
+          </div>
+        </div>
+        <div class="comment_section">
+          <div class="comment_person d-flex align-items-center mb-3">
+            <img src="assets/images/andychen.jpeg" alt="">
+            <div class="comment_person_info d-flex align-items-center justify-content-between">
+              <div class="">
+                <p class="">Andy Chen (You)</p>
+                <p class="comment_time">13:24 AM (1 hours ago)</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <a href="javascript:;"><i class="far fa-star"></i></a>
+                <a href="javascript:;"><i class="fas fa-pen pl-3 pr-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="comment_text">
+            <p>
+              Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. 
+              <br>
+              <br>
+              You can:
+              <ul>
+                <li>adjust the <span>vertical-align</span> of the image to position it elsewhere (e.g. the <span>middle</span> ) or</li>
+                <li>change the <span>display</span> so it isn’t inline.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="comment_btn d-flex align-items-center justify-content-between mt-3">
+      <div class="pagination d-flex justify-content-between">
+        <a href="javascript:;"><i class="fas fa-chevron-left px-2"></i></a>
+        <a href="javascript:;"><i class="fas fa-chevron-right px-2"></i></a>
+      </div>
+      <div class="reply_btns">
+        <button type="button" class="btn btn-outline-white">Mark as read</button>
+        <button type="button" class="btn btn-green green_reply ml-3">Reply</button>
+      </div>
+    </div>
+    <div class="reply_section assign_comment">
+      <div class="ac_title d-flex align-items-center">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Body Text
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Choose me</a>
+            <a class="dropdown-item" href="#">No, choose me</a>
+            <a class="dropdown-item" href="#">No, don't choose them</a>
+          </div>
+        </div>
+        <a href="javascript:;"><i class="fas fa-bold"></i></a>
+        <a href="javascript:;"><i class="fas fa-italic"></i></a>
+        <a href="javascript:;"><i class="fas fa-list-ul"></i></a>
+        <a href="javascript:;"><i class="fas fa-list-ol"></i></a>
+        <a href="javascript:;"><i class="fas fa-images"></i></a>
+        <a href="javascript:;"><i class="fas fa-link"></i></a>
+        <a href="javascript:;"><i class="fas fa-code"></i></a>
+      </div>
+      <textarea class="reply_textarea" rows="4" placeholder="Reply an answer..."></textarea>
+      <div class="reply_btns p-4 d-flex justify-content-end">
+        <button type="button" class="btn btn-outline-white white_cancel">Cancel</button>
+        <button type="button" class="btn btn-green ml-3">Reply</button>
+      </div>
     </div>
   </div>
-  
+</section>
+
+
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
