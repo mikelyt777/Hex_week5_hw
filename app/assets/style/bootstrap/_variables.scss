@@ -45,6 +45,12 @@ $green:   #2A8356 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
+$green-l: #EDF4EE !default;
+$green-border: #CDDDCD !default;
+
+$gray_70: #707070 !default;
+
+
 // scss-docs-start colors-map
 $colors: (
   "blue":       $blue,
@@ -69,7 +75,7 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         $green-l !default;
 $dark:          $gray-800 !default;
 
 // scss-docs-start theme-colors-map
@@ -972,7 +978,7 @@ $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer / 2 !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
-$card-border-color:                 rgba($black, .125) !default;
+$card-border-color:                 $green-border !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y / 2 !default;
 $card-cap-padding-x:                $card-spacer-x !default;

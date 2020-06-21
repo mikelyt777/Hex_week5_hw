@@ -92,7 +92,7 @@ hr:not([size]) {
 
 %heading {
   margin-top: 0; // 1
-  margin-bottom: $headings-margin-bottom;
+  margin-bottom: 0;
   font-family: $headings-font-family;
   font-style: $headings-font-style;
   font-weight: $headings-font-weight;
@@ -138,7 +138,7 @@ h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: $paragraph-margin-bottom;
+  margin-bottom: 0;
 }
 
 
@@ -260,7 +260,10 @@ a {
 
   &:hover {
     color: $green;
-    text-decoration: none;
+  }
+
+  &.a_hover_black{
+    color: #000;
   }
 }
 
